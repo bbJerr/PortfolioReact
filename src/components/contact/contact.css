@@ -1,0 +1,81 @@
+section {
+    min-height: 100vh;
+}
+
+.contact {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    color: var(--accent);
+    width: 100%;
+}
+
+.contact form {
+    max-width: 50rem;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.4rem;
+    font-family: var(--font-family);
+    color: var(--text-primary);
+    background: var(--bg-secondary);
+    border-radius: 0.8rem;
+    border: 2px solid var(--accent);
+    margin: 1rem 0;
+    resize: none;
+}
+.contact form .input-box input:focus,
+.contact form textarea:focus {
+    border-color: var(--text-primary);
+    box-shadow: 0 4px 10px var(--text-primary);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.contact form .btn {
+    background-color: var(--accent);
+    margin-top: 2rem;
+    font-family: var(--font-family);
+}
+
+
+@media (max-width: 450px) {
+    .contact h2 {
+        font-size: 2.5rem;
+    }
+    .contact form .input-box input,
+    .contact form textarea {
+        font-size: 1rem;
+        padding: 1rem;
+        margin: 0.5rem 0;
+    }
+    .contact form .btn {
+        margin-top: 1rem;
+    }
+}

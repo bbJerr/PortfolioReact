@@ -1,0 +1,50 @@
+/* ======= FONT IMPORT ======= */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*============ CSS VARIABLES ============*/
+:root {
+/*========== Colors ==========*/
+  --text-primary: #f1e5e8;
+  --text-secondary: #ececec;
+  --bg-primary: #0e070a;
+  --bg-secondary: #080305;
+  --bg-tertiary: #000000;
+  --primary: #ce8d9e;
+  --accent: #fa729f;
+
+
+/*========== Font and Typography ==========*/
+  --font-family: 'Open Sans';
+  --transition-speed: 600ms;
+}
+
+
+/*============ BASE ============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-primary);
+  min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #fa729f;
+}
+

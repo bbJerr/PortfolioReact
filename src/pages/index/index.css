@@ -1,0 +1,9 @@
+.App {
+    position: relative;
+    z-index: 1; /* Ensure main content is above the stars */
+}
+
+.main-content {
+    position: relative;
+    z-index: 2;
+}
