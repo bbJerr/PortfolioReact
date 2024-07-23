@@ -10,6 +10,7 @@ import skill5 from '../../image/skills/skill5.png';
 import skill6 from '../../image/skills/skill6.png';
 import skill7 from '../../image/skills/skill7.png';
 import skill8 from '../../image/skills/skill8.png';
+import skill9 from '../../image/skills/skill9.png';
 
 
 const barStyle = {
@@ -154,6 +155,15 @@ const About = () => {
                             <div className="info">
                                 <img src={skill8} alt="skill8" />
                                 <span>Figma</span>
+                                {/* <div className="progress">
+                                    <div className="progress-bar" style={{width: '90%'}}>80%</div>
+                                </div> */}
+                            </div>
+                        </div>
+                        <div className="bar" style={barStyle}>
+                            <div className="info">
+                                <img src={skill9} alt="skill9" />
+                                <span>React</span>
                                 {/* <div className="progress">
                                     <div className="progress-bar" style={{width: '90%'}}>80%</div>
                                 </div> */}
