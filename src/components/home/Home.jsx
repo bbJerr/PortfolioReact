@@ -40,7 +40,7 @@ const Home = () => {
             <div className="content">
                 <h1>Jerra Kirsten Javier</h1>
                 <h3>A <span className="typing-text" ref={typingTextRef}></span></h3>
-                <a href="https://www.youtube.com/watch?v=1vM3vwDCf5M" className="btn">
+                <a href="https://www.youtube.com/watch?v=1vM3vwDCf5M" target="_blank" className="btn">
                     <span>Introduction Video</span>
                     <FaCircleDown />
                 </a>
@@ -49,16 +49,16 @@ const Home = () => {
                     <FaCircleDown />
                 </a>
                 <div className="social-icon">
-                    <a href="https://www.linkedin.com/in/jerra-kirsten-javier-8982792b2/">
+                    <a href="https://www.linkedin.com/in/jerra-kirsten-javier-8982792b2/" target="_blank">
                         <FaLinkedin />
                     </a>
-                    <a href="https://www.facebook.com/jerrakirsten.javier">
+                    <a href="https://www.facebook.com/jerrakirsten.javier" target="_blank">
                         <FaFacebook />
                     </a>
-                    <a href="https://www.instagram.com/bb_jerr/">
+                    <a href="https://www.instagram.com/bb_jerr/" target="_blank">
                         <FaInstagram />
                     </a>
-                    <a href="https://github.com/bbJerr">
+                    <a href="https://github.com/bbJerr" target="_blank">
                         <FaGithub />
                     </a>
                 </div>               
