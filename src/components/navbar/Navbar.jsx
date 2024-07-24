@@ -1,5 +1,6 @@
 import React, { useState} from 'react';
 import './navbar.css';
+import logo from '../../image/JK-logo.png';
 
 
 const Navbar = () => {
@@ -9,6 +10,7 @@ const Navbar = () => {
                 <ul className="navbar-nav">
                 <li className="logo">
                     <a href="#" className="nav-link">
+                        {/* <img src={logo} alt="Logo" className="logo-image" /> */}
                     <span className="link-text logo-text">JERRA</span>
                     <svg
                         aria-hidden="true"
@@ -32,7 +34,7 @@ const Navbar = () => {
                             className="fa-primary"
                         ></path>
                         </g>
-                    </svg>
+                    </svg> 
                     </a>
                 </li>
 

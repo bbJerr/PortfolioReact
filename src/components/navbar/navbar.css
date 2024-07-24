@@ -90,16 +90,21 @@ main {
   transition: var(--transition-speed);
 }
 
-.logo-text
-{
+.logo-text {
   display: inline;
   position: absolute;
   left: -999px;
   transition: var(--transition-speed);
+  font-size: 1.5rem;
+  margin-left: 1.8rem;
 }
 
 .navbar:hover .logo svg {
   transform: rotate(-180deg);
+}
+
+.logo-image {
+  width: 3rem;
 }
 
 /* Small screens */
