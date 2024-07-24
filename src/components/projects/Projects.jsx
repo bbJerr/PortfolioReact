@@ -1,44 +1,38 @@
 import React from 'react';
 import './projects.css';
 
-import project1 from '../../image/projects/project1.png';
-import project2 from '../../image/projects/project2.png';
-import project3 from '../../image/projects/project3.png';
-import project4 from '../../image/projects/project4.png';
-import project5 from '../../image/projects/project5.png';
-
 const projects = [
     {
         id: 1,
-        image: project1,
+        image: 'projects/project1.png',
         title: 'Dobu Martial Arts',
         description: 'A website for DoBu Martial Arts, a martial arts gym offering various classes, fitness training, and self-defense courses',
         github: 'https://github.com/bbJerr/DoBuWebsite',
     },
     {
         id: 2,
-        image: project2,
+        image: 'projects/project2.png',
         title: 'Enomy Finances',
         description: 'A financial website which offers services such as currency conversions and personalized investment plans.',
         github: 'https://github.com/bbJerr/EnomyFinances',
     },
     {
         id: 3,
-        image: project3,
+        image: 'projects/project3.png',
         title: 'Used Car Sales Portal',
         description: 'A website for selling, booking, and bidding quality pre-owned vehicles.',
         github: 'https://github.com/bbJerr/UsedCarSales',
     },
     {
         id: 4,
-        image: project4,
+        image: 'projects/project4.png',
         title: 'Rae Angelas Delectables',
         description: 'A catering website which offers you a variety of food menu and services.',
         github: 'https://github.com/bbJerr/RaeAngelasDelectables',
     },
     {
         id: 5,
-        image: project5,
+        image: 'projects/project5.png',
         title: 'Meals on Wheels',
         description: 'A website for a charity organization called Merry Meals. This website is dedicated to providing meals to the sick and elderly.',
         github: 'https://github.com/schrodinger41/merrymeals',

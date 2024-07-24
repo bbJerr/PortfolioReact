@@ -1,18 +1,6 @@
 import React, { useEffect } from 'react';
 import './about.css';
 
-import aboutImage from '../../image/aboutImg.png';
-import skill1 from '../../image/skills/skill1.png';
-import skill2 from '../../image/skills/skill2.png';
-import skill3 from '../../image/skills/skill3.png';
-import skill4 from '../../image/skills/skill4.png';
-import skill5 from '../../image/skills/skill5.png';
-import skill6 from '../../image/skills/skill6.png';
-import skill7 from '../../image/skills/skill7.png';
-import skill8 from '../../image/skills/skill8.png';
-import skill9 from '../../image/skills/skill9.png';
-
-
 const barStyle = {
     marginBottom: '15px',
     padding: '10px',
@@ -61,7 +49,7 @@ const About = () => {
         <div>
             <div className="about" id="about">
                 <div className="about-image">
-                    <img src={aboutImage} alt="Home image" />
+                    <img src='about.png' alt="Home image" />
                 </div>   
                 <div className="about-info">     
                 <h2>Get to Know Me</h2>
@@ -90,7 +78,7 @@ const About = () => {
                     <div className="row" id="skillContainer">
                         <div className="bar" style={barStyle}>
                             <div className="info">
-                                <img src={skill1} alt="skill1" />
+                                <img src='skills/skill1.png' alt="skill1" />
                                 <span>HTML</span>
                                 {/* <div className="progress">
                                     <div className="progress-bar" style={{width: '90%'}}>90%</div>
@@ -99,7 +87,7 @@ const About = () => {
                         </div>
                         <div className="bar">
                             <div className="info">
-                                <img src={skill2} alt="skill2" />
+                                <img src='skills/skill2.png' alt="skill2" />
                                 <span>CSS</span>
                                 {/* <div className="progress">
                                     <div className="progress-bar" style={{width: '90%'}}>80%</div>
@@ -108,7 +96,7 @@ const About = () => {
                         </div>
                         <div className="bar" style={barStyle}>
                             <div className="info">
-                                <img src={skill3} alt="skill3" />
+                                <img src='skills/skill3.png' alt="skill3" />
                                 <span>JavaScript</span>
                                 {/* <div className="progress">
                                     <div className="progress-bar" style={{width: '90%'}}>65%</div>
@@ -117,7 +105,7 @@ const About = () => {
                         </div>
                         <div className="bar">
                             <div className="info">
-                                <img src={skill4} alt="skill4" />
+                                <img src='skills/skill4.png' alt="skill4" />
                                 <span>Java</span>
                                 {/* <div className="progress">
                                     <div className="progress-bar" style={{width: '90%'}}>50%</div>
@@ -126,7 +114,7 @@ const About = () => {
                         </div>
                         <div className="bar" style={barStyle}>
                             <div className="info">
-                                <img src={skill5} alt="skill5" />
+                                <img src='skills/skill5.png' alt="skill5" />
                                 <span>MySQL</span>
                                 {/* <div className="progress">
                                     <div className="progress-bar" style={{width: '90%'}}>75%</div>
@@ -135,7 +123,7 @@ const About = () => {
                         </div>
                         <div className="bar">
                             <div className="info">
-                                <img src={skill6} alt="skill6" />
+                                <img src='skills/skill6.png' alt="skill6" />
                                 <span>Spring</span>
                                 {/* <div className="progress">
                                     <div className="progress-bar" style={{width: '90%'}}>70%</div>
@@ -144,7 +132,7 @@ const About = () => {
                         </div>
                         <div className="bar"  style={barStyle}>
                             <div className="info">
-                                <img src={skill7} alt="skill7" />
+                                <img src='skills/skill7.png' alt="skill7" />
                                 <span>Bootstrap</span>
                                 {/* <div className="progress">
                                     <div className="progress-bar" style={{width: '90%'}}>85%</div>
@@ -153,7 +141,7 @@ const About = () => {
                         </div>
                         <div className="bar">
                             <div className="info">
-                                <img src={skill8} alt="skill8" />
+                                <img src='skills/skill8.png' alt="skill8" />
                                 <span>Figma</span>
                                 {/* <div className="progress">
                                     <div className="progress-bar" style={{width: '90%'}}>80%</div>
@@ -162,7 +150,7 @@ const About = () => {
                         </div>
                         <div className="bar" style={barStyle}>
                             <div className="info">
-                                <img src={skill9} alt="skill9" />
+                                <img src='skills/skill9.png' alt="skill9" />
                                 <span>React</span>
                                 {/* <div className="progress">
                                     <div className="progress-bar" style={{width: '90%'}}>80%</div>

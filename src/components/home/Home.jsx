@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react';
 import './home.css';
 import { FaLinkedin, FaFacebook, FaInstagram, FaGithub } from 'react-icons/fa';
 import { FaCircleDown } from "react-icons/fa6";
-import homeImage from '../../image/home.png';
 
 const Home = () => {
     const typingTextRef = useRef(null);
@@ -64,7 +63,7 @@ const Home = () => {
                 </div>               
             </div>
             <div className="image">
-                <img src={homeImage} alt="Home image" />
+                <img src='home.png' alt="Home image" />
             </div>
         </section>
     );
