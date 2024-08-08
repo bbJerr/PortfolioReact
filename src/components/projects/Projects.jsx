@@ -7,6 +7,7 @@ const projects = [
         image: 'projects/project1.png',
         title: 'Dobu Martial Arts',
         description: 'A website for DoBu Martial Arts, a martial arts gym offering various classes, fitness training, and self-defense courses',
+        languages: ['HTML', 'CSS', 'JavaScript'],
         github: 'https://github.com/bbJerr/DoBuWebsite',
     },
     {
@@ -14,6 +15,7 @@ const projects = [
         image: 'projects/project2.png',
         title: 'Enomy Finances',
         description: 'A financial website which offers services such as currency conversions and personalized investment plans.',
+        languages: ['Java', 'CSS', 'MySQL', 'Spring'],
         github: 'https://github.com/bbJerr/EnomyFinances',
     },
     {
@@ -21,6 +23,7 @@ const projects = [
         image: 'projects/project3.png',
         title: 'Used Car Sales Portal',
         description: 'A website for selling, booking, and bidding quality pre-owned vehicles.',
+        languages: ['Java', 'CSS', 'JavaScript', 'MySQL', 'Spring'],
         github: 'https://github.com/bbJerr/UsedCarSales',
     },
     {
@@ -28,6 +31,7 @@ const projects = [
         image: 'projects/project4.png',
         title: 'Rae Angelas Delectables',
         description: 'A catering website which offers you a variety of food menu and services.',
+        languages: ['HTML', 'CSS', 'React'],
         github: 'https://github.com/bbJerr/RaeAngelasDelectables',
         website: 'https://raeangelasdelectables.netlify.app/',
     },
@@ -36,6 +40,7 @@ const projects = [
         image: 'projects/project5.png',
         title: 'Meals on Wheels',
         description: 'A website for a charity organization called Merry Meals. This website is dedicated to providing meals to the sick and elderly.',
+        languages: ['PHP', 'Blade', 'CSS'],
         github: 'https://github.com/schrodinger41/merrymeals',
     },
     {
@@ -43,6 +48,7 @@ const projects = [
         image: 'projects/project6.png',
         title: 'Bullet Journal',
         description: 'An online bullet journal to document and keep track of your daily notes, mood, and habits.',
+        languages: ['HTML', 'CSS', 'React'],
         github: 'https://github.com/bbJerr/bulletJournal',
         website: 'https://online-bujo.netlify.app/',
     },
@@ -71,7 +77,7 @@ const Projects = () => {
                         <h3 className="project-title">{project.title}</h3>
                         <p className="project-description">{project.description}</p>
                         <div className="buttons-container">
-                            <a href={project.github} className="btn-proj" target="_blank" rel="noopener noreferrer">
+                            <a href={project.github} className="btn-proj github-btn" target="_blank" rel="noopener noreferrer" data-languages={project.languages.join(', ')}>
                                 <GitHubIcon /> GitHub
                             </a>
                             {project.website && (

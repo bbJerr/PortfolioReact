@@ -4,16 +4,15 @@ section {
 }
 
 .home {
-    padding-top: 8%;
     position: relative;
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
     min-height: 100vh;
     text-align: left;
- 
+    align-items: center; 
+    justify-content: space-between;
 }
-
 
 .home .content {
     flex: 1.5 1 40%;
@@ -93,7 +92,7 @@ section {
     font-size: 2.5rem;
     color: var(--primary);
     font-weight: 600;
-    padding: 1 rem 0;
+    padding: 1rem 0;
     position: relative;
     border-right: 2px solid var(--primary); /* Blinking cursor effect */
     white-space: nowrap;
@@ -111,7 +110,6 @@ section {
     margin-left: 10rem;
     border-radius: 50%;
     box-shadow: 0 2px 8px var(--text-primary);
-    cursor: pointer;
 }
 
 .home .image img:hover {

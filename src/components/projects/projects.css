@@ -21,7 +21,7 @@
     border-radius: 8px;
     background: var(--text-primary);
     box-shadow: 0 4px 10px var(--accent);
-    overflow: hidden;
+    overflow: visible;
     padding: 1rem;
     max-width: 300px;
     margin: 0 auto;
@@ -81,6 +81,33 @@
     border: 2px solid var(--text-primary);
     filter: drop-shadow(0 0 15px var(--text-primary));
 }
+
+.github-btn {
+    position: relative;
+}
+
+.github-btn:hover::after {
+    content: attr(data-languages);
+    position: absolute;
+    top: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--text-primary);
+    color: var(--primary);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    white-space: nowrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 0.9rem;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.github-btn:hover::after {
+    opacity: 1;
+}
+
 
 @media screen and (max-width: 768px) {
     .projects-container {

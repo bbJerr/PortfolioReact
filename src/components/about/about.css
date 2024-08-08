@@ -64,7 +64,6 @@
     width: 80%;
     height: 90%;
     object-fit: cover;
-    cursor: pointer;
 }
 
 @media (max-width: 1535px) {
@@ -136,7 +135,6 @@
 .skills .container .bar:hover {
     box-shadow: 0 8px 10px var(--accent);
     transform: scale(1.1);
-    cursor: pointer;
 }
 
 .skills .container .bar .info {
