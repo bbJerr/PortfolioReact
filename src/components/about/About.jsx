@@ -1,17 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './about.css';
 
-const barStyle = {
-    marginBottom: '15px',
-    padding: '10px',
-    borderRadius: '3rem',
-    background: 'var(--text-primary)',
-    boxShadow: '0 4px 10px var(--text-primary)',
-    transition: '0.3s',
-    color: 'var(--accent)'
-};
-
 const About = () => {
+    const [view, setView] = useState('technical');
 
     useEffect(() => {
         const aboutImageElement = document.querySelector('.about-image img');
@@ -32,7 +23,7 @@ const About = () => {
 
         const handleMouseLeave = () => {
             aboutImageElement.removeEventListener('mousemove', handleMouseMove);
-            aboutImageElement.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)'; // Reset transform on leave
+            aboutImageElement.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
         };
 
         aboutImageElement.addEventListener('mouseenter', handleMouseEnter);
@@ -44,6 +35,54 @@ const About = () => {
             aboutImageElement.removeEventListener('mousemove', handleMouseMove);
         };
     }, []);
+
+    const technicalSkills = [
+        { name: 'HTML', img: 'skills/tech-skill1.png' },
+        { name: 'CSS', img: 'skills/tech-skill2.png' },
+        { name: 'JavaScript', img: 'skills/tech-skill3.png' },
+        { name: 'Java', img: 'skills/tech-skill4.png' },
+        { name: 'MySQL', img: 'skills/tech-skill5.png' },
+        { name: 'Spring', img: 'skills/tech-skill6.png' },
+        { name: 'Bootstrap', img: 'skills/tech-skill7.png' },
+        { name: 'Figma', img: 'skills/tech-skill8.png' },
+        { name: 'React', img: 'skills/tech-skill9.png' },
+    ];
+
+    const softSkills = [
+        { name: 'Communication', img: 'skills/soft-skill1.png' },
+        { name: 'Teamwork', img: 'skills/soft-skill2.png' },
+        { name: 'Problem Solving', img: 'skills/soft-skill3.png' },
+        { name: 'Adaptability', img: 'skills/soft-skill4.png' },
+        { name: 'Time Management', img: 'skills/soft-skill5.png' },
+        { name: 'Creativity', img: 'skills/soft-skill6.png' },
+    ];
+
+    const renderSkills = (skills) => {
+        return skills.map((skill, index) => {
+            const isOdd = index % 2 !== 0;
+    
+            const barStyle = isOdd
+                ? {
+                    marginBottom: '15px',
+                    padding: '10px',
+                    borderRadius: '3rem',
+                    background: 'var(--text-primary)',
+                    boxShadow: '0 4px 10px var(--text-primary)',
+                    transition: '0.3s',
+                    color: 'var(--accent)',
+                }
+                : {};
+    
+            return (
+                <div className="bar" style={barStyle} key={index}>
+                    <div className="info">
+                        <img src={skill.img} alt={skill.name} />
+                        <span>{skill.name}</span>
+                    </div>
+                </div>
+            );
+        });
+    };
 
     return (
         <div>
@@ -74,89 +113,23 @@ const About = () => {
 
             <div className="skills" id="skills">
                 <h2 className="heading">Skills</h2>
+                <div className="toggle-buttons">
+                    <button
+                        onClick={() => setView('technical')}
+                        className={view === 'technical' ? 'active' : ''}
+                    >
+                        Technical Skills
+                    </button>
+                    <button
+                        onClick={() => setView('soft')}
+                        className={view === 'soft' ? 'active' : ''}
+                    >
+                        Soft Skills
+                    </button>
+                </div>
                 <div className="container">
                     <div className="row" id="skillContainer">
-                        <div className="bar" style={barStyle}>
-                            <div className="info">
-                                <img src='skills/skill1.png' alt="skill1" />
-                                <span>HTML</span>
-                                {/* <div className="progress">
-                                    <div className="progress-bar" style={{width: '90%'}}>90%</div>
-                                </div> */}
-                            </div>
-                        </div>
-                        <div className="bar">
-                            <div className="info">
-                                <img src='skills/skill2.png' alt="skill2" />
-                                <span>CSS</span>
-                                {/* <div className="progress">
-                                    <div className="progress-bar" style={{width: '90%'}}>80%</div>
-                                </div> */}
-                            </div>
-                        </div>
-                        <div className="bar" style={barStyle}>
-                            <div className="info">
-                                <img src='skills/skill3.png' alt="skill3" />
-                                <span>JavaScript</span>
-                                {/* <div className="progress">
-                                    <div className="progress-bar" style={{width: '90%'}}>65%</div>
-                                </div> */}
-                            </div>
-                        </div>
-                        <div className="bar">
-                            <div className="info">
-                                <img src='skills/skill4.png' alt="skill4" />
-                                <span>Java</span>
-                                {/* <div className="progress">
-                                    <div className="progress-bar" style={{width: '90%'}}>50%</div>
-                                </div> */}
-                            </div>
-                        </div>
-                        <div className="bar" style={barStyle}>
-                            <div className="info">
-                                <img src='skills/skill5.png' alt="skill5" />
-                                <span>MySQL</span>
-                                {/* <div className="progress">
-                                    <div className="progress-bar" style={{width: '90%'}}>75%</div>
-                                </div> */}
-                            </div>
-                        </div>
-                        <div className="bar">
-                            <div className="info">
-                                <img src='skills/skill6.png' alt="skill6" />
-                                <span>Spring</span>
-                                {/* <div className="progress">
-                                    <div className="progress-bar" style={{width: '90%'}}>70%</div>
-                                </div> */}
-                            </div>
-                        </div>
-                        <div className="bar"  style={barStyle}>
-                            <div className="info">
-                                <img src='skills/skill7.png' alt="skill7" />
-                                <span>Bootstrap</span>
-                                {/* <div className="progress">
-                                    <div className="progress-bar" style={{width: '90%'}}>85%</div>
-                                </div> */}
-                            </div>
-                        </div>
-                        <div className="bar">
-                            <div className="info">
-                                <img src='skills/skill8.png' alt="skill8" />
-                                <span>Figma</span>
-                                {/* <div className="progress">
-                                    <div className="progress-bar" style={{width: '90%'}}>80%</div>
-                                </div> */}
-                            </div>
-                        </div>
-                        <div className="bar" style={barStyle}>
-                            <div className="info">
-                                <img src='skills/skill9.png' alt="skill9" />
-                                <span>React</span>
-                                {/* <div className="progress">
-                                    <div className="progress-bar" style={{width: '90%'}}>80%</div>
-                                </div> */}
-                            </div>
-                        </div>
+                        {view === 'technical' ? renderSkills(technicalSkills) : renderSkills(softSkills)}
                     </div>
                 </div>
             </div>

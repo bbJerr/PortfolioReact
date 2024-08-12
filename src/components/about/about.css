@@ -121,6 +121,7 @@
     grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
     gap: 1.8rem;
+    justify-content: center;
 }
 
 .skills .container .bar {
@@ -168,6 +169,42 @@
     width: 0;
     transition: width 0.8s ease;
 } */
+
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.toggle-buttons button {
+    background-color: var(--text-primary);
+    color: var(--text-secondary);
+    border: none;
+    padding: 15px 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.toggle-buttons button:first-child {
+    border-radius: 15px 0 0 15px; /* Curved left corners */
+}
+
+.toggle-buttons button:last-child {
+    border-radius: 0 15px 15px 0; /* Curved right corners */
+}
+
+.toggle-buttons button.active {
+    background-color: var(--accent);
+    color: var(--text-secondary);
+}
+
+.toggle-buttons button:hover {
+    background-color: var(--primary);
+}
 
 @media screen and (max-width:600px) {
     .skills .container {
