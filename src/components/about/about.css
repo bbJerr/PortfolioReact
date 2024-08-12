@@ -108,7 +108,7 @@
 
 .skills .container {
     /* background: var(--primary); */
-    color: var(--text-primary);
+    color: #f1e5e8;
     border-radius: 4rem;
     padding: 2rem;
     width: 50%;
@@ -283,7 +283,7 @@
     text-align: center;
     font-weight: 600;
     font-family: "Font Awesome\ 5 Free";
-    color: var(--bg-primary);
+    color: #681a3d;
 }
 
 .education .left {

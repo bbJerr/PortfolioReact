@@ -1,9 +1,17 @@
 import React, { useState} from 'react';
 import './navbar.css';
 import logo from '../../image/logo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 
 
 const Navbar = () => {
+    const [theme, setTheme] = useState('dark');
+
+    const toggleTheme = () => {
+        setTheme(theme === 'dark' ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme === 'dark' ? 'light' : 'dark');
+    };
     return (
         <div>
             <nav className="navbar">
@@ -137,9 +145,11 @@ const Navbar = () => {
                     </svg>
                     <span className="link-text">Contact</span>
                     </a>
-                </li>
-           
+                </li>                      
                 </ul>
+                <div className="eye-toggle" onClick={toggleTheme}>
+                    <FontAwesomeIcon icon={theme === 'dark' ? faEye : faEyeSlash} />
+                </div>   
             </nav>
         </div>
     );

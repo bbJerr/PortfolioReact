@@ -66,8 +66,8 @@ const About = () => {
                     marginBottom: '15px',
                     padding: '10px',
                     borderRadius: '3rem',
-                    background: 'var(--text-primary)',
-                    boxShadow: '0 4px 10px var(--text-primary)',
+                    background: '#f1e5e8',
+                    boxShadow: '0 4px 10px #f1e5e8',
                     transition: '0.3s',
                     color: 'var(--accent)',
                 }

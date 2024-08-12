@@ -18,6 +18,18 @@
   --transition-speed: 600ms;
 }
 
+/* Light mode colors */
+[data-theme='light'] {
+  --text-primary: #c26a81;
+  --text-secondary: #f1e5e8;
+  --bg-primary: #e6c3cc;
+  --bg-secondary: #ececec;
+  --bg-tertiary: #ffffff;
+  --primary: #ce8d9e;
+  --accent: #fa729f;
+}
+
+
 
 /*============ BASE ============*/
 * {
