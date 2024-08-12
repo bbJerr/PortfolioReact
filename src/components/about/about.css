@@ -181,7 +181,7 @@
     color: var(--text-secondary);
     border: none;
     padding: 15px 20px;
-    border: 1px solid black;
+    border: 2px solid #f1e5e8;
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 1rem;
@@ -191,6 +191,7 @@
 
 .toggle-buttons button:first-child {
     border-radius: 15px 0 0 15px; /* Curved left corners */
+    border-right: none;
 }
 
 .toggle-buttons button:last-child {
@@ -198,12 +199,12 @@
 }
 
 .toggle-buttons button.active {
-    background-color: var(--accent);
+    background-color: var(--primary);
     color: var(--text-secondary);
 }
 
 .toggle-buttons button:hover {
-    background-color: var(--primary);
+    background-color: #ac6d7d;
 }
 
 @media screen and (max-width:600px) {
@@ -223,6 +224,9 @@
     }
     .skills .container .bar .info span {
         font-size: 1rem;
+    }
+    .toggle-buttons button {
+        font-size: 0.85rem;
     }
 }
 
