@@ -308,7 +308,7 @@
 .education .content .tag h2 {
     font-size: 1.8rem;
     font-weight: 600;
-    color: var(--bg-primary);
+    color: var(--text-secondary);
     font-weight: bold;
 }
 .education .content .tag h2 .year {
@@ -319,7 +319,7 @@
 .education .content .decs p {
     font-size: 1.3rem;
     font-weight: 500;
-    color: var(--bg-primary);
+    color: var(--text-secondary);
     margin-top: 10px;
     line-height: 2.2rem;
 }

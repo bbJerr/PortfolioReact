@@ -41,12 +41,13 @@
 .project-title {
     margin: 0 0 0.5rem;
     font-size: 1.2rem;
-    color: var(--bg-primary);
+    color: var(--text-secondary);
 }
 
 .project-description {
     font-size: 1rem;
     margin-bottom: 1rem;
+    color: var(--text-secondary);
 }
 
 .buttons-container {
@@ -62,7 +63,7 @@
     background-color: var(--primary);
     font-size: 1rem;
     border-radius: 4rem;
-    color: var(--bg-primary);
+    color: var(--text-secondary);
     border: 2px solid transparent;
     font-weight: 600;
     transition: 0.3s ease;

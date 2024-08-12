@@ -49,7 +49,7 @@ section {
     background-color: var(--text-primary);
     font-size: 1.6rem;
     border-radius: 4rem;
-    color: var(--bg-primary);
+    color: var(--text-secondary);
     border: 2px solid transparent;
     letter-spacing: 0.1rem;
     font-weight: 600;
@@ -59,7 +59,7 @@ section {
 }
 
 .btn span {
-    color: var(--bg-primary);
+    color: var(--text-secondary);
 }
 
 .btn:hover span {
