@@ -140,7 +140,7 @@ const About = () => {
                     <div className="container right">
                         <div className="content">
                             <div className="tag">
-                                <h2>Lithan Academy - Singapore <span className="year"><br/>(2023-current)</span></h2>
+                                <h2>Lithan Academy - Singapore <span className="year"><br/>(2023 - present)</span></h2>
                             </div>
                             <div className="decs">
                                 <p>Currently studying Software Engineering at Lithan Academy, an institution renowned for its digital skills training 
@@ -151,7 +151,7 @@ const About = () => {
                     <div className="container left">
                         <div className="content">
                             <div className="tag">
-                                <h2>University of Cebu - Banilad <span className="year"><br/>(2023-current)</span></h2>
+                                <h2>University of Cebu - Banilad <span className="year"><br/>(2023 - present)</span></h2>
                             </div>
                             <div className="decs">
                                 <p>Enrolled in the BSIT-SE (Bachelor of Science in Information Technology Specialized in Software Engineering) program 
@@ -162,7 +162,7 @@ const About = () => {
                     <div className="container right">
                         <div className="content">
                             <div className="tag">
-                                <h2>Academia de San Jose <span className="year"><br/>(2011-2023)</span></h2>
+                                <h2>Academia de San Jose <span className="year"><br/>(2011 - 2023)</span></h2>
                             </div>
                             <div className="decs">
                                 <p>Completed grade school to senior high school at Academia de San Jose, Mandaue City, Philippines. Achieved consistent 

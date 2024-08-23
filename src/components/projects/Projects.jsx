@@ -52,6 +52,24 @@ const projects = [
         github: 'https://github.com/bbJerr/bulletJournal',
         website: 'https://online-bujo.netlify.app/',
     },
+    {
+        id: 7,
+        image: 'projects/project7.png',
+        title: 'Brain Tease',
+        description: 'An trivia website to test your knowledge on random topics with the use of API.',
+        languages: ['HTML', 'CSS', 'React'],
+        github: 'https://github.com/bbJerr/brainTease',
+        website: 'https://brain-tease.netlify.app/',
+    },
+    {
+        id: 8,
+        image: 'projects/project8(v2).png',
+        title: 'ConVo',
+        description: 'A real time chat website which allows you to enter any rooms of the same name to chat with other people.',
+        languages: ['HTML', 'CSS', 'React', 'Firebase'],
+        github: 'https://github.com/bbJerr/ConVo',
+        website: 'https://con-vo.netlify.app/',
+    }
 ];
 
 const GitHubIcon = () => (
