@@ -9,10 +9,10 @@ const StarsAnimation = () => {
             document.querySelector('.stars-container').appendChild(e);
             e.style.left = Math.random() * window.innerWidth + 'px';
 
-            let size = Math.random() * 12;
+            let size = 10 + Math.random() * 12;
             let duration = Math.random() * 3;
 
-            e.style.fontSize = 12 + 'px';
+            e.style.fontSize = size + 'px';
             e.style.animationDuration = 2 + duration + 's';
             setTimeout(() => {
                 document.querySelector('.stars-container').removeChild(e);
