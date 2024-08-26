@@ -49,7 +49,7 @@ body {
   cursor: url('/cursor.png'), auto;
 }
 
-a, button, a.btn, a.btn-proj, input.btn {
+a, button, a.btn, a.btn-proj, input.btn, .toggle-buttons button:first-child, .toggle-buttons button:last-child {
   cursor: url('/pointer.png'), pointer;
 }
 
