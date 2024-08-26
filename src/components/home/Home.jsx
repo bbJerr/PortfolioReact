@@ -39,8 +39,8 @@ const Home = () => {
             <div className="content">
                 <h1>Jerra Kirsten Javier</h1>
                 <h3>A <span className="typing-text" ref={typingTextRef}></span></h3>
-                <a href="https://www.youtube.com/watch?v=1vM3vwDCf5M" target="_blank" className="btn">
-                    <span>Introduction Video</span>
+                <a href="https://youtu.be/x2m07Rhp50c" target="_blank" className="btn">
+                    <span>Video Introduction</span>
                     <FaCircleDown />
                 </a>
                 <a href="#" className="btn" id="download-cv">
