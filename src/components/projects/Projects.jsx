@@ -78,6 +78,15 @@ const projects = [
         languages: ['HTML', 'CSS', 'React', 'Firebase'],
         github: 'https://github.com/bbJerr/ConVo',
         website: 'https://con-vo.netlify.app/',
+    },
+    {
+        id: 10,
+        image: 'projects/project10.png',
+        title: 'SnapStudy',
+        description: 'A website where students can create flashcards to aid them in their studies.',
+        languages: ['HTML', 'CSS', 'React', 'Firebase'],
+        github: 'https://github.com/schrodinger41/snapstudy',
+        website: 'https://snap-study.netlify.app/',
     }
 ];
 
